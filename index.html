@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asadbek Toirov | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="logoAT.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="script.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Space+Grotesk:wght@400;600&family=Manrope:wght@400;600&family=JetBrains+Mono:wght@400;600&family=Poppins:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="menu-overlay"></div>
+
+    <header>
+      <div class="logo">
+        <img width="70px" src="logoAT.png" alt="" />
+        <div class="logo">Asadbek Toirov</div>
+      </div>
+      <div class="nav-desktop">
+        <a href="#about" data-tr="about">Men haqimda</a>
+        <a href="#services" data-tr="services">Xizmatlar</a>
+        <a href="#projects" data-tr="projects">Loyihalar</a>
+        <a href="#contact" data-tr="contact">Bog‘lanish</a>
+      </div>
+      <div class="menu-toggle"><span></span><span></span><span></span></div>
+      <div class="lang-switch">
+        <span class="lang active" data-lang="uz">UZ</span>
+        <span class="lang" data-lang="ru">RU</span>
+        <span class="lang" data-lang="en">EN</span>
+      </div>
+    </header>
+
+    <nav class="nav-mobile">
+      <a href="#about" data-tr="about">Men haqimda</a>
+      <a href="#services" data-tr="services">Xizmatlar</a>
+      <a href="#projects" data-tr="projects">Loyihalar</a>
+      <a href="#contact" data-tr="contact">Bog‘lanish</a>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1 data-tr="heroTitle">Salom, men Asadbek</h1>
+        <p data-tr="heroDesc">
+          Front-End Developer | UI/UX Designer 
+        </p>
+        <a href="#about" class="btn-primary" data-tr="heroBtn"
+          >Ko‘proq bilish</a
+        >
+      </div>
+        <canvas id="stars"></canvas>
+    </section>
+
+    <section id="about" class="about">
+      <h2 class="section-title animate-on-scroll" data-tr="aboutTitle">
+        Men haqimda
+      </h2>
+      <div class="about-content">
+        <div class="bio animate-on-scroll">
+          <h3 data-tr="bioTitle">Biografiya</h3>
+          <p data-tr="bioText1">
+            Mening Ismim Asadbek Men“Mars IT” akademiyasini bitirgan yosh dasturchiman. 15 yoshdaman
+            va frontend yo‘nalishida faol rivojlanib borayapman. Har bir
+            loyihamda dizayn, qulaylik va samaradorlikka e’tibor beraman.
+            Texnologiyalar bilan ishlashni, yangi g‘oyalarni kod orqali hayotga
+            tatbiq etishni yoqtiraman.
+          </p>
+          <p data-tr="bioText2" style="margin-top: 1rem">
+            Har bir loyiha men uchun yangi imkoniyat — foydalanuvchilar uchun
+            qulay, chiroyli va tezkor tajriba yaratish.
+          </p>
+        </div>
+        <div class="skills animate-on-scroll">
+          <h3
+            style="
+              font-family: 'Inter', sans-serif;
+              color: var(--accent);
+              margin-bottom: 1.5rem;
+            "
+            data-tr="skillsTitle"
+          >
+            Ko‘nikmalar
+          </h3>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Web Development</span><span>100%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 100%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>UI/UX Design</span><span>95%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 95%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span> React.Js / Html / Css /JavaScript </span><span>100%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 100%"></div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <h2 class="section-title animate-on-scroll" data-tr="servicesTitle">
+        Xizmatlar
+      </h2>
+      <div class="service-grid">
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3 data-tr="srv1Title">Front-End Development</h3>
+          <p data-tr="srv1Desc">
+            React.Js, Vite, Html, Js, Css bilan zamonaviy, tezkor va responsiv
+            veb-ilovalar yarataman.
+          </p>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+          <h3 data-tr="srv2Title">UI/UX Design</h3>
+          <p data-tr="srv2Desc">
+            Foydalanuvchi tajribasiga asoslangan dizaynlar, prototiplar va
+            animatsiyalar.
+          </p>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3 data-tr="srv3Title">Mobil moslashuv</h3>
+          <p data-tr="srv3Desc">
+            iOS va Android uchun to‘liq moslashuvchan interfeyslar, PWA
+            yechimlari.
+          </p>
+        </div>
+      </div>
+      <canvas id="services-bg"></canvas>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2 class="section-title animate-on-scroll" data-tr="projectsTitle">
+        Loyihalarim
+      </h2>
+
+      <div class="projects-showcase">
+        <div class="project-card">
+          <div
+            class="project-image"
+            style="background-image: url('logoAT.png')"
+          ></div>
+          <div class="project-overlay">
+            <h3>Gita - JavaScript Kursi</h3>
+            <p>
+              Bu loyiha kurs uchun landing sahifa bo‘lib, modal oyna, video iframe, Swiper slayder va interaktiv formalar bilan yaratilgan.
+            </p>
+            <div class="project-links">
+              <a class="l" href="#" target="_blank" aria-label="Live Demo"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div
+            class="project-image"
+            style="background-image: url('logoAT.png')"
+          ></div>
+          <div class="project-overlay">
+            <h3>Task Management App</h3>
+            <p>
+              Vue.js va Firebase asosida yaratilgan topshiriq boshqaruv tizimi.
+              Real-time sinxronizatsiya bilan.
+            </p>
+            <div class="project-links">
+
+              <a class="l" href="#" aria-label="Live Demo"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div
+            class="project-image"
+            style="background-image: url('logoAT.png')"
+          ></div>
+          <div class="project-overlay">
+            <h3>Portfolio Website</h3>
+            <p>
+              HTML, CSS va JavaScript yordamida yaratilgan professional
+              portfolio sahifasi — animatsiyalar va responsiv dizayn bilan.
+            </p>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" aria-label="Live Demo"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section id="contact" class="contact">
+  <div class="contact-content">
+    <h2 class="animate-on-scroll" data-tr="contactTitle">Bog‘lanish</h2>
+    <p class="animate-on-scroll" data-tr="contactDesc">
+      Yangi loyihalar, hamkorlik yoki shunchaki salomlashish uchun — xabar yuboring!
+    </p>
+
+    <form class="contact-form animate-on-scroll" id="contactForm">
+      <div class="form-row">
+        <div class="form-group">
+          <input id="name" type="text" required />
+          <label data-tr="nameLabel">Ismingiz</label>
+        </div>
+        <div class="form-group">
+          <input id="email" type="email" required />
+          <label data-tr="emailLabel">Email</label>
+        </div>
+      </div>
+<div class="form-group phone-group">
+  <label data-tr="phoneLabel">Telefon raqamingiz</label>
+  <div class="phone-wrapper">
+    <div class="phone-prefix">
+      <img src="https://flagcdn.com/w20/uz.png" alt="UZ" class="flag">
+      <span class="prefix">+998</span>
+    </div>
+    <input 
+      id="phone" 
+      type="tel" 
+      maxlength="18" 
+      required 
+    />
+  </div>
+</div>
+      <div class="form-group">
+        <input id="websiteType" type="text" required />
+        <label class="" data-tr="biznesLabel">Sizga qanday turdagi veb-sayt kerak</label>
+      </div>
+
+      <div class="form-group">
+        <textarea id="message" rows="5" required></textarea>
+        <label data-tr="msgLabel">Xabar</label>
+      </div>
+
+      <button type="submit" class="submit-btn" data-tr="sendBtn">
+        Yuborish
+      </button>
+    </form>
+  </div>
+</section>
+<footer class="footer" id="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h4 data-tr="aboutTitle">Biz haqimizda</h4>
+          <p data-tr="aboutText">
+            Biz veb-dasturlash, dizayn va IT xizmatlari sohasida faoliyat
+            yuritamiz. Maqsadimiz — zamonaviy va ishonchli yechimlar yaratish.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-tr="linksTitle">Foydali havolalar</h4>
+          <ul>
+            <li><a href="#" data-tr="home">Bosh sahifa</a></li>
+            <li><a href="#" data-tr="services">Xizmatlar</a></li>
+            <li><a href="#" data-tr="portfolio">Portfolio</a></li>
+            <li><a href="#" data-tr="contact">Bog‘lanish</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-tr="contactTitle">Aloqa</h4>
+          <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt"></i>
+              <span data-tr="address">Toshkent, O‘zbekiston</span></li>
+            <li><i class="fas fa-phone"></i> +998 93 857 33 11</li>
+            <li><i class="fas fa-envelope"></i> info@asadbek.uz</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-tr="newsTitle">Yangiliklar</h4>
+          <p data-tr="newsText">
+            So‘nggi loyihalar va yangiliklardan xabardor bo‘ling:
+          </p>
+          <form class="newsletter" target="_blank">
+            <input
+              class="emailm"
+              type="email"
+              placeholder="Email manzilingiz"
+              required
+            />
+            <button class="btn1" type="submit">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="social-links">
+        <a href="https://t.me/toirovasadd"><i class="fab fa-telegram"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-tr="copyright">
+          © 2025 Asadbek Toirov. Barcha huquqlar himoyalangan.
+        </p>
+        <a href="#top" class="back-to-top">
+          <i class="fas fa-arrow-up"></i> <span data-tr="backTop">Tepaga qaytish</span>
+        </a>
+      </div>
+    </footer>
+
+  </body>
+</html>
